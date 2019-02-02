@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="lightBlack">#211e1f</color>
+    <color name="replay">#28303a</color>
+    <color name="homePage">#6f86a3</color>
+</resources>

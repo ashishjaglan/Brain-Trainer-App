@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="time"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <EditText
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="score"
+            android:textColor="@android:color/holo_blue_light" />
+    </LinearLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="76dp"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="1"
+            android:text="1"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="2"
+            android:text="2"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="3"
+            android:text="3"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="4"
+            android:text="4"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="5"
+            android:text="5"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="6"
+            android:text="6"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="7"
+            android:text="7"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="8"
+            android:text="8"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/lightBlack"
+            android:onClick="buttonPressed"
+            android:tag="9"
+            android:text="9"
+            android:textColor="@android:color/darker_gray" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/lightBlack"
+        android:onClick="buttonPressed"
+        android:tag="0"
+        android:text="0"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/lightBlack"
+        android:onClick="backspace"
+        android:text="Backspace"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/ques"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:background="@android:color/black"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ques"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:id="@+id/replayScreen"
+        android:layout_width="364dp"
+        android:layout_height="351dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="144dp"
+        android:background="@color/replay"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/fScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/replay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark"
+            android:onClick="replay"
+            android:text="Replay"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="70sp" />
+    </LinearLayout>
+</RelativeLayout>
